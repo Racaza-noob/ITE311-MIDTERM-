@@ -13,28 +13,26 @@ class CreateAnnouncementsTable extends Migration
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
-                'auto_increment' => true,
+                'auto_increment' => true
             ],
             'title' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => 255
             ],
             'content' => [
-                'type' => 'TEXT',
-                'null' => true,
+                'type' => 'TEXT'
             ],
             'created_at' => [
                 'type' => 'DATETIME',
-                'null' => true,
-            ],
+                'null' => true
+            ]
         ]);
-
         $this->forge->addKey('id', true);
-        $this->forge->createTable('announcements', true);
+        $this->forge->createTable('announcements');
     }
 
     public function down()
     {
-        $this->forge->dropTable('announcements', true);
+        $this->forge->dropTable('announcements');
     }
 }

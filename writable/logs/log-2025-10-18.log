@@ -188,3 +188,573 @@ CRITICAL - 2025-10-18 09:42:14 --> ErrorException: Cannot declare class App\Data
 [Method: CLI, Route: migrate]
 in APPPATH\Database\Migrations\2025-10-18-172900_CreateAnnouncementsTable.php on line 7.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-10-18 11:33:40 --> CodeIgniter\Filters\Exceptions\FilterException: "roleauth" filter must have a matching alias defined.
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Filters\Filters.php on line 590.
+ 1 SYSTEMPATH\Filters\Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('roleauth')
+ 2 SYSTEMPATH\Filters\Filters.php(641): CodeIgniter\Filters\Filters->enableFilter('roleauth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 11:33:41 --> CodeIgniter\Filters\Exceptions\FilterException: "roleauth" filter must have a matching alias defined.
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Filters\Filters.php on line 590.
+ 1 SYSTEMPATH\Filters\Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('roleauth')
+ 2 SYSTEMPATH\Filters\Filters.php(641): CodeIgniter\Filters\Filters->enableFilter('roleauth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:09:44 --> ErrorException: Undefined array key "role"
+[Method: GET, Route: student/dashboard]
+in APPPATH\Views\templates\dashboard_layout.php on line 70.
+ 1 APPPATH\Views\templates\dashboard_layout.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\templates\\dashboard_layout.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\templates\\dashboard_layout.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/dashboard_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('student/dashboard', [], true)
+ 6 APPPATH\Controllers\Student.php(52): view('student/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Student->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:09:44 --> ErrorException: Undefined array key "role"
+[Method: GET, Route: student/dashboard]
+in APPPATH\Views\templates\dashboard_layout.php on line 70.
+ 1 APPPATH\Views\templates\dashboard_layout.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\templates\\dashboard_layout.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\templates\\dashboard_layout.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/dashboard_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('student/dashboard', [], true)
+ 6 APPPATH\Controllers\Student.php(52): view('student/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Student->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:51:43 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(40): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:53:21 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:02 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:03 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:19 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:20 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:22 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:24 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:25 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:25 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:29 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:33 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:35 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:35 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:36 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:36 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:36 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:55:38 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:58:06 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(147): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(36): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:58:07 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(147): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(36): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:59:10 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(147): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(36): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:59:11 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(147): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(36): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:59:14 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(147): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(36): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 12:59:19 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(147): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(36): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:01:40 --> ParseError: syntax error, unexpected single-quoted string "title", expecting "function" or "const"
+[Method: GET, Route: teacher/dashboard]
+in APPPATH\Controllers\Teacher.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Controllers\\Teacher.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Teacher')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Teacher')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Teacher', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:01:42 --> ParseError: syntax error, unexpected single-quoted string "title", expecting "function" or "const"
+[Method: GET, Route: teacher/dashboard]
+in APPPATH\Controllers\Teacher.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Controllers\\Teacher.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Teacher')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Teacher')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Teacher', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:01:44 --> ParseError: syntax error, unexpected single-quoted string "title", expecting "function" or "const"
+[Method: GET, Route: teacher/dashboard]
+in APPPATH\Controllers\Teacher.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Controllers\\Teacher.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Teacher')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Teacher')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Teacher', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:04:22 --> ParseError: syntax error, unexpected single-quoted string "title", expecting "function" or "const"
+[Method: GET, Route: teacher/dashboard]
+in APPPATH\Controllers\Teacher.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Controllers\\Teacher.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Teacher')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Teacher')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Teacher', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:04:23 --> ParseError: syntax error, unexpected single-quoted string "title", expecting "function" or "const"
+[Method: GET, Route: teacher/dashboard]
+in APPPATH\Controllers\Teacher.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Controllers\\Teacher.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Teacher')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Teacher')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Teacher', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:04:23 --> ParseError: syntax error, unexpected single-quoted string "title", expecting "function" or "const"
+[Method: GET, Route: teacher/dashboard]
+in APPPATH\Controllers\Teacher.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Controllers\\Teacher.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Teacher')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Teacher')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Teacher', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:04:27 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:04:28 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:04:28 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:04:30 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(31): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:06:22 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(33): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:06:23 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(33): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:06:25 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(33): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-18 13:07:06 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: teacher/dashboard]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\teacher\teacher_dashboard.php(168): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ITE311Racaza\\app\\Views\\teacher\\teacher_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('teacher/teacher_dashboard', [], true)
+ 5 APPPATH\Controllers\Teacher.php(33): view('teacher/teacher_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Teacher->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
