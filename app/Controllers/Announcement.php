@@ -3,16 +3,16 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
+use App\Models\AnnouncementModel;
 
 class Announcement extends Controller
 {
     public function index()
     {
-        $db = \Config\Database::connect();
-        $announcements = $db->table('announcements')
-                          ->orderBy('created_at', 'DESC')
-                          ->get()
-                          ->getResultArray();
+        $model = new AnnouncementModel();
+        $announcements = $model
+            ->orderBy('created_at', 'DESC')
+            ->findAll();
         
         $data = [
             'announcements' => $announcements
